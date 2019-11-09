@@ -92,8 +92,7 @@ body {
 } */
 /* --------------- End of Hero ---------------- */
 /* --------------- Products ---------------- */
-
-.products {
+/* .products {
   padding: 4rem 0;
 }
 .section-title h2 {
@@ -162,7 +161,7 @@ body {
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   text-align: center;
-}
+} */
 
 /* ---------------End of Products ---------------- */
 /* --------------- Cart ---------------- */
