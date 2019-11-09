@@ -56,7 +56,7 @@ body {
 } */
 /* --------------- End of Navbar ---------------- */
 /* --------------- Hero ---------------- */
-.hero {
+/* .hero {
   min-height: calc(100vh - 60px);
   background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
   display: flex;
@@ -89,7 +89,7 @@ body {
 .banner-btn:hover {
   background: transparent;
   color: var(--primaryColor);
-}
+} */
 /* --------------- End of Hero ---------------- */
 /* --------------- Products ---------------- */
 
