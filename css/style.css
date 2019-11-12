@@ -93,6 +93,12 @@ body {
   background: transparent;
   color: var(--primaryColor);
 }
+
+.checkout-btn {
+  background: #bbb;
+  margin-top: 1rem;
+  padding: 1rem 3.3rem;
+}
 /* --------------- End of Hero ---------------- */
 
 /* --------------- Products ---------------- */

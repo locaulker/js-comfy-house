@@ -2,6 +2,7 @@
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
+const checkOutBtn = document.querySelector(".checkout-btn");
 const cartDOM = document.querySelector(".cart");
 const cartOverlay = document.querySelector(".cart-overlay");
 const cartItems = document.querySelector(".cart-items");
@@ -268,3 +269,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+// Stripe Checkout
+// const stripePublicKey = 'stripePublicKey'
+const stripeHandler = stripeCheckout.configure({
+  key: stripePublicKey,
+  locale: 'auto',
+  token: (token) => {
+
+  }
+})
+
+function purchaseClicked() {
+  // const stripePublicKey = 'stripePublicKey';
+  const priceElement = cartTotal;
+  const price = parseFloat(priceElement.innerText.replace('$', '')) * 100;
+  stripeHandler.open({
+    amount: price
+  })
+}

@@ -7,6 +7,10 @@
   <title>JS Comfy House</title>
   <script src="https://kit.fontawesome.com/72e27f13c6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://checkout.stripe.com/checkout.js" defer></script>
+  <script>
+    const stripePublicKey = 'stripePublicKey'
+  </script>
 </head>
 <body>
   
@@ -43,7 +47,10 @@
   
       <div class="cart-footer">
         <h3>cart total : $ <span class="cart-total">49</span></h3>
-        <button class="clear-cart banner-btn">clear cart</button>
+        <div class="cart-buttons">
+          <button class="clear-cart banner-btn">clear cart</button>
+          <button class="checkout-btn banner-btn">Checkout</button>
+        </div>
       </div><!-- End .cart-footer -->       
     </div><!-- End .cart -->
   </div><!-- End .cart-overlay -->
